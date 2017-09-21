@@ -10,10 +10,11 @@
 
 
 关于视图函数:
-    如果写CBV,class名字需有View后缀,首字母大写,驼峰命名法,比如
+
+    如果写CBV,class名字需有View后缀,比如
     class IndexView(View):
 
-    如果写FBV,def名字需有Func后缀,首字母小写,驼峰命名法,比如
+    如果写FBV,def名字需有Func后缀,比如
     def indexFunc(request):
 
 

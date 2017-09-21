@@ -10,10 +10,17 @@
 
 
 关于视图函数:
+<<<<<<< HEAD
     如果写CBV,class名字需有View后缀,首字母大写,驼峰命名法,比如
     class IndexView(View):
 
     如果写FBV,def名字需有Func后缀,首字母小写,驼峰命名法,比如
+=======
+    如果写CBV,class名字需有View后缀,比如
+    class IndexView(View):
+
+    如果写FBV,def名字需有Func后缀,比如
+>>>>>>> b3a65995f1572b051693666b878650a33af56a0c
     def indexFunc(request):
 
 
@@ -33,3 +40,8 @@
     palyApp下的url需要前面加play前缀,比如 reverse('play:XXX')
     clubApp下的url需要前面加play前缀,比如 reverse('club:XXX')
     项目根目录下的url不需要前缀
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> b3a65995f1572b051693666b878650a33af56a0c

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>play leagues</h1>
+{% for lg in leagues %}
+    <a href="{% url 'play:Round' league_num=lg.id %}"><div>{{ lg.l_name }}</div></a>
+{% endfor %}
+
+</body>
+</html>

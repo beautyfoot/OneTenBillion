@@ -1,3 +1,15 @@
+版本更新：
+V7.2
+1、添加playApp字段查询渲染（jzh）
+V7.1
+1、增加userApp（用户）
+2、增加dateApp（数据爬取）
+且都已添加settings设置
+V7.0
+1、增加playerApp（球员）
+2、修改playApp字段l_circle，为数字代表轮数
+
+
 关于静态文件:
     所使用到的jQuery,Bootstrap直接使用
     /static/js/jquery-3.2.1  和

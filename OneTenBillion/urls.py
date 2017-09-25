@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^$', IndexView.as_view()),
     url(r'^play/', include('playApp.urls', namespace='play')),
     url(r'^club/', include('clubApp.urls', namespace='club')),
+    url(r'^player/', include('playerApp.urls', namespace='player')),
 ]

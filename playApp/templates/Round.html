@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>round</h1>
+{% for chrd in round %}
+    <a href="{% url 'play:RoundII' league_num=league round_num=chrd.l_circle %}">{{ chrd.l_circle }}轮&nbsp;&nbsp;&nbsp;</a>
+{% endfor %}
+<table>
+    <tbody>
+        <tr>
+            <th>比赛时间</th>
+            <th>主队</th>
+            <th>比分</th>
+            <th>客队</th>
+            <th>比赛结果</th>
+            <th>主赔率</th>
+            <th>平赔率</th>
+            <th>客赔率</th>
+        </tr>
+    {% for play in table %}
+        <tr>
+            <td>{{ play.p_time }}</td>
+            <td>{{ play.z_name }}</td>
+            <td>{{ play.z_goal }}:{{ play.k_goal }}</td>
+            <td>{{ play.k_name }}</td>
+            <td>{{ play.p_result }}</td>
+            <td>{{ play.z_peilv }}</td>
+            <td>{{ play.p_peilv }}</td>
+            <td>{{ play.k_peilv }}</td>
+        </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+
+
+</body>
+</html>

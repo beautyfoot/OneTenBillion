@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'clubApp',
     'playApp',
     'playerApp',
+    'userApp',
+    'dateApp',
 ]
 
 MIDDLEWARE = [

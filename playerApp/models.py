@@ -13,5 +13,7 @@ class Player(models.Model):
     c_name = models.ForeignKey(Club, verbose_name='俱乐部')
     position = models.ForeignKey(PlayPosition, verbose_name="位置", default=1)
 
+    class Meta:
+        unique_together = ('name', 'c_name',)
 
 

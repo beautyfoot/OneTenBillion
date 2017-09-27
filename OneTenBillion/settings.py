@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'playApp',
     'playerApp',
     'userApp',
-    'dateApp',
+    'dataApp',
 ]
 
 MIDDLEWARE = [

@@ -16,7 +16,7 @@ class Play(models.Model):
     z_goal = models.SmallIntegerField(verbose_name="主队进球")
     k_goal = models.SmallIntegerField(verbose_name="客队进球")
     p_result = models.SmallIntegerField(choices=results, verbose_name="比赛结果")
-    l_circle = models.IntegerField(max_length=2, verbose_name="比赛轮数")
+    l_circle = models.SmallIntegerField(verbose_name="比赛轮数")
     z_peilv = models.DecimalField(max_digits=5, decimal_places=3, verbose_name="主赔率")
     p_peilv = models.DecimalField(max_digits=5, decimal_places=3, verbose_name="平赔率")
     k_peilv = models.DecimalField(max_digits=5, decimal_places=3, verbose_name="客赔率")

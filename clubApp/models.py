@@ -21,7 +21,7 @@ class Club(models.Model):
     '''
     俱乐部
     '''
-    c_name = models.CharField(max_length=32, verbose_name="俱乐部名字")
+    c_name = models.CharField(max_length=32, unique=True, verbose_name="俱乐部名字")
     l_name = models.ForeignKey(League, verbose_name="所属联赛")
 
     def __str__(self):

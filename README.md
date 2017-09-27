@@ -5,10 +5,12 @@ OneTenBillion
 # 目录
 * 项目目标
 * 注意事项
- * 关于静态文件
- * 关于视图函数
- * 关于url匹配
+    * 关于静态文件
+    * 关于视图函数
+    * 关于url匹配
 * 更新
+    * 最新版本
+    * 更新记录
 
 项目目标
 --------
@@ -56,3 +58,18 @@ urlpatterns = [
   palyApp下的url需要前面加play前缀,比如 reverse('play:XXX')<br>
   clubApp下的url需要前面加play前缀,比如 reverse('club:XXX')<br>
   项目根目录下的url不需要前缀
+
+更新
+--------
+### 最新版本
+branch：master
+### 更新记录
+#### V7.2
+* 添加playApp字段查询渲染（jzh）
+#### V7.1 
+* 增加userApp（用户）
+* 增加dateApp（数据爬取）
+* 且都已添加settings设置
+#### V7.0 
+* 增加playerApp（球员）
+* 修改playApp字段l_circle，为数字代表轮数

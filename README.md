@@ -9,6 +9,7 @@ OneTenBillion
   * 关于视图函数
   * 关于url匹配
 * 更新
+
 项目目标
 --------
 ### 初期
@@ -17,6 +18,7 @@ OneTenBillion
 3. 提供数据API接口，根据固定条件，提供赛事预测
    1. 提供个人条件设定，返回结果反馈
 4. 注册、登陆
+
 注意事项
 ---------
 ### 关于静态文件
@@ -51,6 +53,6 @@ urlpatterns = [
 ]
 ```
 如果需要用到url反向生成,<br>
-palyApp下的url需要前面加play前缀,比如 reverse('play:XXX')<br>
-clubApp下的url需要前面加play前缀,比如 reverse('club:XXX')<br>
-项目根目录下的url不需要前缀
+  palyApp下的url需要前面加play前缀,比如 reverse('play:XXX')<br>
+  clubApp下的url需要前面加play前缀,比如 reverse('club:XXX')<br>
+  项目根目录下的url不需要前缀

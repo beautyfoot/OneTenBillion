@@ -1,8 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.views import View
-from playApp.models import Play
-from clubApp.models import League, Club
+from repository.models import Play, League, Club
 
 
 class IndexView(View):

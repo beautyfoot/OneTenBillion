@@ -16,10 +16,7 @@ from bs4 import BeautifulSoup
 
 from collections import deque
 
-from clubApp.models import Club, League
-
-# Create your views here.
-from playerApp.models import Player, PlayPosition
+from repository.models import Club, League, Player, PlayPosition
 
 
 def get_other(request):

@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'userApp',
     'dataApp',
     'repository',
+    'nb_lc.apps.NbLcConfig',
 ]
 
 MIDDLEWARE = [

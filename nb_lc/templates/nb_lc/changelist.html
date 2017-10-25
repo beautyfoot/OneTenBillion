@@ -1,0 +1,63 @@
+{% load result_list %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据列表</title>
+    <link rel="stylesheet" href="/static/nb_lc/plugins/bootstrap/css/bootstrap.css"/>
+</head>
+<style>
+    .whole {
+        width: 40px;
+        float: left;
+    }
+
+    .others {
+        padding-left: 40px;
+    }
+
+    .row a.active {
+        color: #2F72AB;
+        background-color: red;
+    }
+</style>
+<body>
+<div class="container">
+    <h1>数据列表</h1>
+    <div class="row">
+        {% if cl.list_filter %}
+            {% for col in cl.get_list_filter %}
+                <div class="main">
+                    {% for obj in col %}
+                        {{ obj }}
+                    {% endfor %}
+
+                </div>
+            {% endfor %}
+
+        {% endif %}
+    </div>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="row">
+            {% if cl.actions %}
+                {% show_actions cl %}
+            {% endif %}
+
+            {% if cl.model_config_obj.get_show_add_btn %}
+                {{ cl.add_html }}
+            {% endif %}
+
+        </div>
+        <div class="row">
+            {% show_result_list cl %}
+            <ul class="pagination">
+                {{ cl.page_html }}
+            </ul>
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>

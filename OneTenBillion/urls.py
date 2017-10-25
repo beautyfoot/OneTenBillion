@@ -16,8 +16,12 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from playApp.views import IndexView
+from nb_lc.service import nb
 
 urlpatterns = [
+    url(r'^nb/', nb.site.urls),
+
+
     url(r'^admin/', admin.site.urls),
     url(r'^index/', IndexView.as_view(), name='index'),
     url(r'^$', IndexView.as_view()),

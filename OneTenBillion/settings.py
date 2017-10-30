@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'userApp',
     'dataApp',
     'repository',
-    'nb_lc.apps.NbLcConfig',
+    'arya.apps.AryaConfig',
+    'rbac.apps.RbacConfig',
 ]
 
 MIDDLEWARE = [

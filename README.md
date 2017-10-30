@@ -64,6 +64,8 @@ urlpatterns = [
 ### 最新版本
 branch：master
 ### 更新记录
+#### V8.0
+* 添加CURD插件nb_lc
 #### V7.2
 * 添加playApp字段查询渲染（jzh）
 #### V7.1 

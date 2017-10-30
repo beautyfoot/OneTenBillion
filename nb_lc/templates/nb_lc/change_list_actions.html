@@ -1,7 +1,0 @@
-<select class="form-control" name="action" style="display: inline-block;width: 200px;">
-    <option value="">请选择</option>
-    {% for item in actions %}
-        <option value="{{ item.0 }}">{{ item.1 }}</option>
-    {% endfor %}
-</select>
-<input type="submit" value="执行" class="btn btn-primary" />

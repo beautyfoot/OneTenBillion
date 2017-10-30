@@ -15,17 +15,18 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from arya.service import sites
+
 from playApp.views import IndexView
-from nb_lc.service import nb
 
 urlpatterns = [
-    url(r'^nb/', nb.site.urls),
+    url(r'^arya/', sites.site.urls),
 
 
-    url(r'^admin/', admin.site.urls),
-    url(r'^index/', IndexView.as_view(), name='index'),
-    url(r'^$', IndexView.as_view()),
-    url(r'^play/', include('playApp.urls', namespace='play')),
-    url(r'^club/', include('clubApp.urls', namespace='club')),
-    url(r'^player/', include('playerApp.urls', namespace='player')),
+    # url(r'^admin/', admin.site.urls),
+    # url(r'^index/', IndexView.as_view(), name='index'),
+    # url(r'^$', IndexView.as_view()),
+    # url(r'^play/', include('playApp.urls', namespace='play')),
+    # url(r'^club/', include('clubApp.urls', namespace='club')),
+    # url(r'^player/', include('playerApp.urls', namespace='player')),
 ]
